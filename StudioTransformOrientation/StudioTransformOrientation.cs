@@ -147,7 +147,6 @@ namespace StudioTransformOrientation
         {
             if (localActive && _child != null)
             {
-                Logging(BepInEx.Logging.LogLevel.Info, $"OnAttach");
                 GuideObject guideObject = _child.guideObject;
                 SetNewObjectOrientation(guideObject);
             }
@@ -165,7 +164,6 @@ namespace StudioTransformOrientation
         {
             if (localActive)
             {
-                Logging(BepInEx.Logging.LogLevel.Info, $"OnDetach");
                 GuideObject guideObject = __instance.guideObject;
                 SetDetachedObjOrientation(guideObject);
             }
@@ -188,7 +186,6 @@ namespace StudioTransformOrientation
         {
             if (localActive && __result != null)
             {
-                Logging(BepInEx.Logging.LogLevel.Info, $"Add and Load");
                 GuideObject guideObject = __result.guideObject;
                 SetNewObjectOrientation(guideObject);
             }
