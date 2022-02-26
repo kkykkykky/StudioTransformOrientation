@@ -14,10 +14,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KKS_StudioTransformOrientation", "KKS_StudioTransformOrientation\KKS_StudioTransformOrientation.csproj", "{12902F95-FF5B-4AD7-B727-7A9D8DDD4A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KK_StudioTransformOrientation", "KK_StudioTransformOrientation\KK_StudioTransformOrientation.csproj", "{A97EEAAB-63DF-4CA2-B3E9-44B5EE6B4DDF}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		StudioTransformOrientation\StudioTransformOrientation.projitems*{12902f95-ff5b-4ad7-b727-7a9d8ddd4a40}*SharedItemsImports = 4
 		StudioTransformOrientation\StudioTransformOrientation.projitems*{1b2f80bf-3feb-4f1f-8b25-87888482bc16}*SharedItemsImports = 13
 		StudioTransformOrientation\StudioTransformOrientation.projitems*{973fe90f-206e-4542-973a-2432051460d4}*SharedItemsImports = 4
+		StudioTransformOrientation\StudioTransformOrientation.projitems*{a97eeaab-63df-4ca2-b3e9-44b5ee6b4ddf}*SharedItemsImports = 4
 		StudioTransformOrientation\StudioTransformOrientation.projitems*{aa880904-6300-404a-83f8-0e96ca7c083a}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,14 @@ Global
 		{973FE90F-206E-4542-973A-2432051460D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{973FE90F-206E-4542-973A-2432051460D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{973FE90F-206E-4542-973A-2432051460D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12902F95-FF5B-4AD7-B727-7A9D8DDD4A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12902F95-FF5B-4AD7-B727-7A9D8DDD4A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12902F95-FF5B-4AD7-B727-7A9D8DDD4A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12902F95-FF5B-4AD7-B727-7A9D8DDD4A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A97EEAAB-63DF-4CA2-B3E9-44B5EE6B4DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A97EEAAB-63DF-4CA2-B3E9-44B5EE6B4DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A97EEAAB-63DF-4CA2-B3E9-44B5EE6B4DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A97EEAAB-63DF-4CA2-B3E9-44B5EE6B4DDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

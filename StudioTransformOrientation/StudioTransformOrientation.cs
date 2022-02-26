@@ -1,17 +1,23 @@
-﻿using System;
-using BepInEx;
+﻿using BepInEx;
 using BepInEx.Configuration;
 using HarmonyLib;
-using UnityEngine;
-using AIChara;
-using Studio;
-using KKAPI.Utilities;
 using KKAPI.Studio;
 using KKAPI.Studio.SaveLoad;
+using KKAPI.Utilities;
+using Studio;
+using System;
+using UnityEngine;
+#if AI || HS2
+using AIChara;
+#endif
 
 namespace StudioTransformOrientation
 {
+#if AI || HS2
     [BepInProcess("StudioNEOV2")]
+#else
+    [BepInProcess("CharaStudio")]
+#endif
     [BepInDependency(KKAPI.KoikatuAPI.GUID, KKAPI.KoikatuAPI.VersionConst)]
     [BepInPlugin(GUID, Game + " Studio Transform Orientation", Version)]
     public partial class StudioTransformOrientation : BaseUnityPlugin
@@ -51,7 +57,7 @@ namespace StudioTransformOrientation
         {
             Texture2D gIconTex = new Texture2D(32, 32);
             byte[] texData = ResourceUtils.GetEmbeddedResource("LocalTransBtn.png");
-            ImageConversion.LoadImage(gIconTex, texData);
+            gIconTex.LoadImage(texData);
             KKAPI.Studio.UI.CustomToolbarButtons.AddLeftToolbarToggle(gIconTex, false, active => {
                 SetExistingObjectsOrientation(active);
             });
