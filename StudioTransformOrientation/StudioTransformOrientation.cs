@@ -22,7 +22,7 @@ namespace StudioTransformOrientation
     [BepInPlugin(GUID, Game + " Studio Transform Orientation", Version)]
     public partial class StudioTransformOrientation : BaseUnityPlugin
     {
-        public const string Version = "1.1.1";
+        public const string Version = "1.1.2";
 
         public static ConfigEntry<bool> ConfigChildRef;
 
@@ -48,7 +48,7 @@ namespace StudioTransformOrientation
 
         private void Awake()
         {
-            ConfigChildRef = Config.Bind("Child object transform orientation", "Relative to Parent", false, "When this option is Enabled and Local transform orientation is toggled on, move arrows orientation of child object will be relative to the rotaation of parent object instead of itself. Similar to HS1.");
+            ConfigChildRef = Config.Bind("Child object transform orientation", "Relative to Parent", false, "When this option is Enabled and Local transform orientation is toggled on, move arrows orientation of child object will be relative to the rotation of it's parent instead of itself. Similar to HS1.");
 
             StudioAPI.StudioLoadedChanged += StudioAPI_Enter;
         }

@@ -1,6 +1,6 @@
 # StudioTransformOrientation
 
-Toggle between World and Local transform orientations when manipulating location of objects in Studio. For AI and Honey Select 2.
+Toggle between World and Local transform orientations when manipulating location of objects in Studio. For AI, Honey Select 2, Koikatsu, and Koikatsu Sunshine.
 
 **Download:**
  - Get latest version from the Releases page.
